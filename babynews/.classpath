@@ -34,6 +34,6 @@
 	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/jdom.jar"/>
 	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/jtidy-r938.jar"/>
 	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/nekohtml.jar"/>
-	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine (3)"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine (4)"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

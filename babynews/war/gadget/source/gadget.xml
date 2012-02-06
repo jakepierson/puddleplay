@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="puddleplay.com"/>
 <meta property="og:image" content="http://www.puddleplay.com/_/rsrc/1271739025097/config/customLogo.gif?revision=4"/>
 
-<link rel="stylesheet" type="text/css" href="http://jakepierson.com/gadget/gadget_sandbox/style.css"/> 
+<link rel="stylesheet" type="text/css" href="http://puddleplaynews.appspot.com/gadget/source/style.css"/> 
 <link rel="stylesheet" type="text/css" href="http://puddleplaynews.appspot.com/gadget/source/fancybox/jquery.fancybox-1.3.1.css"/> 
 
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/mpadlimohlflajmepdadefmipgopcgff">
@@ -199,7 +199,7 @@
 </script>
 
 
-<script type="text/javascript" src="http://jakepierson.com/gadget/gadget_sandbox/gadget.js"></script>
+<script type="text/javascript" src="http://puddleplaynews.appspot.com/gadget/source/gadget.js"></script>
 
 
 ]]> </Content>

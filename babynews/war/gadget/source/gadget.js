@@ -9,18 +9,6 @@
 	Babynews.init = function() {
 	
 	
-		if( $.browser.msie || $.browser.mozilla ) {
-			var text = 'Try one of these browsers and come back: &nbsp;' +
-			' <a href="http://www.google.com/chrome">Google Chrome</a> &nbsp;' +
-			//'  <a href="http://www.mozilla.org/firefox/">Mozilla Firefox</a> &nbsp;' +
-			'  <a href="http://www.apple.com/safari/download/">Safari</a>';
-			
-			$("#noSuckasAllowed").fadeIn(300);
-			$("#suckasText").html(text);
-			return;
-		}
-
-	
 		//ANALYTICS
 		if( _IG_GA ) {
 	   		Babynews.ga = new _IG_GA("UA-8912978-1"); 
@@ -34,7 +22,10 @@
 	   
 	    //Google+
 		if(gapi){
-			gapi.plusone.go();			
+			gapi.plusone.go();
+			
+			var expanded = $("#plus-expanded");
+			$("#plus-container").click( function(){ expanded.toggleClass("open"); } )
 		}
 		
 		
@@ -172,9 +163,9 @@
 			if( Babynews.isRefreshing ) return;
 			
 			if (Babynews.layoutManager.postSizeTooBig()) {
-						Babynews.increaseItemDisplayNum();
+				Babynews.increaseItemDisplayNum();
 			} else if (Babynews.layoutManager.postSizeTooSmall()) {
-						Babynews.decreaseItemDisplayNum();
+				Babynews.decreaseItemDisplayNum();
 			} else Babynews.refreshLayout(); 
 			
 			Babynews.setScroll(false);
@@ -237,7 +228,11 @@
 		
 			if (window.chrome && window.chrome.app && !window.chrome.app.isInstalled) {
 			
-				if( chrome.webstore ) chrome.webstore.install(null, null, null);
+				//if( chrome.webstore ) chrome.webstore.install();
+				//DISABLED due to iFrame
+				
+				window.open('https://chrome.google.com/webstore/detail/mpadlimohlflajmepdadefmipgopcgff/publish-accepted?hl=en-US&gl=US','_newtab');
+				
 			}
 		}
 	
@@ -257,18 +252,53 @@
 			 	});
 								
 			 }
-				jQuery(Babynews.selectors.pageContainer).oneTime(1000, function(fails){
-					Babynews.fetchData(Babynews.settings.TAGS_LIST_URL, Babynews.receiveTags);
-				});			 
-							
+		 
+			jQuery(Babynews.selectors.pageContainer).oneTime(1000, function(fails){
+				Babynews.fetchData(Babynews.settings.TAGS_LIST_URL, Babynews.receiveTags);
+			});			 
+						
 			return;
 		}
 		
 		jQuery(Babynews.selectors.pageContainer).stopTime();
 		Babynews.alertManager.hide();
-	
-		Babynews.processTags( obj.data );
-
+		
+		
+		
+		/*
+		*
+		*	CHECK for browser version and proceed if it's allowed
+		*/
+		
+		var ie_version = 100;
+		var text = "";
+		var ff = false;
+		var data = obj.data;
+		
+		if ("ie_version" in data.prefs) {
+			if( data.prefs.ie_version.toUpperCase() == "OFF" ) ie_version = 15;
+			else ie_version = data.prefs.ie_version;
+		} else {
+			ie_version = 100;
+		}
+			
+		if ("firefox_support" in data.prefs) 
+			ff = data.prefs.firefox_support.toUpperCase();
+		else 
+			ff = "OFF";
+			
+		if ("unsupported_browser_text" in data.prefs) text = data.prefs.unsupported_browser_text;
+				
+		if( ( $.browser.msie && parseInt($.browser.version, 10) > ie_version )  //if it's IE and the version used is greater than that allowed
+			|| ( $.browser.mozilla && ff != "ON") )  //if the browser is FF and the ff enable setting is not ON
+		{
+		    $("#suckasText").html( text );			
+			$("#noSuckasAllowed").fadeIn(300);
+		}
+		else {
+			Babynews.processTags( obj.data );
+		}
+		
 	};
 		
 		
@@ -439,10 +469,8 @@
 			});
 		}
 		
-						
 		//install the chrome store install link
 		Babynews.storeLink.installLink();
-		
 		
 		//select the first link or the default selected index
 		if (Babynews.tags.length > 0) {
@@ -2483,7 +2511,7 @@
 			prompt.addClass("sharePrompt");
 			prompt.click( function(event){ 
 						//need to stop the event because this prompt gets confused with the "share" prompt to open.
-						if(event &&  event.preventDefault) event.preventDefault();
+						if(event && event.preventDefault) event.preventDefault();
 						if(event && event.stopPropagation) event.stopPropagation();
 						else event.cancelBubble=true;
 						

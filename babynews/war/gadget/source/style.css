@@ -65,6 +65,7 @@ body, td, div, span, p, a {
 	left: 0;
 	right: 0;
 	bottom: 30px;
+	min-width: 1125px;
 }
 
 #tagTitle {
@@ -87,7 +88,7 @@ body, td, div, span, p, a {
 	white-space: nowrap;
 	font-size: 13px;
 	border: 2px solid transparent;
-	padding: 4px 10px;
+	padding: 4px 0px;
 	line-height: 23px;
 }
 
@@ -125,8 +126,8 @@ body, td, div, span, p, a {
 	position: absolute;
 	right: 7px;
 	display: block;
-	text-align: center;
-	width: 288px;
+	text-align: right;
+	width: 240px;
 }
 
 #navLeftSpacer {
@@ -135,10 +136,9 @@ body, td, div, span, p, a {
 
 
 #loadingIndicator {
-	display: inline;
-	float: left;
+	position: absolute;
+	right: 240px;
 	font-size: 14px;
-	margin-left: 0px;
 	white-space: nowrap;
 	line-height: 34px;
 }
@@ -150,19 +150,32 @@ body, td, div, span, p, a {
 	margin-top: 2px;
 }
 
-#plus-container:hover #plus-expanded {
-	display: block;
+#plus-container a {
+	padding: 3px 9px 0px 9px;
+	border-radius: 3px;
+	margin-top: -5px;
 }
 
+#plus-container:hover a {
+	background: hsl(38, 88%, 91%);
+}
+
+
+
 #plus-expanded {
-	display: none;
+	opacity: 0.0;
 	position: absolute;
 	padding: 20px;
 	background-color: white;
-	top:20px;
-	left: 200px;
+	left: 109px;
 	z-index: 1000;
+	top: -500px;
+	height: 0px;
 	
+	-webkit-transition-property: opacity;
+    -webkit-transition-duration: 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+    
 	border-radius: 5px;
     -moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -172,14 +185,36 @@ body, td, div, span, p, a {
 	box-shadow:  0px 1px 10px #999; 
 }
 
-
+#plus-expanded.open {
+	opacity: 1.0;
+	height: auto;
+	top: 25px;
+}
 
 
 .navBar {
 	height: 32px;
-	width: 100%;
 	overflow: visible;
 	position: relative;
+	width: 100%;
+	padding-left: 158px;
+	min-width: 951px;
+  	
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	
+	display: box;
+	box-orient: horizontal;
+	box-pack: center;
+	box-align: center;
+
 }
 
 .navBar img {}
@@ -187,15 +222,10 @@ body, td, div, span, p, a {
 
 #linkBar {
 	display: block;
-	display: block;
 	font-size: 13px;
-	left: 160px;
 	overflow: visible;
-	position: absolute;
 	white-space: nowrap;
-	width: 30%;
-	float: left;
-	width: 480px;
+	width: 290px;
 }
 
 #linkBar .links {
@@ -227,21 +257,18 @@ body, td, div, span, p, a {
 
 
 #buttons {
-	position: relative;
-	width: 160px;
-	margin: 0px auto;
+	height: 32px;
+
+	-webkit-box-flex: 1;
+  	-moz-box-flex: 1;
+  	box-flex: 1;
 }
 
 
 #indicator {
-	position: absolute;
-	width: 33%;
-	right: 0px;
-	top: 0px;
+  	width: 400px;
+	height: 32px;	
 }
-
-
-
 
 
 .leftButton, .rightButton {
@@ -253,6 +280,11 @@ body, td, div, span, p, a {
 	left: 1px;
 }
 
+.buttonBox {
+	width: 160px;
+	position: relative;
+	margin: 0 auto;
+}
 
 .buttonContainer {
 	position: relative; 
@@ -1618,4 +1650,3 @@ input.gsc-search-button {
 .gs-promotion.gs-result .gs-visibleUrl {
   color: #008000;
 }
-
