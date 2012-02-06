@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+
+	<cron>
+    	<url>/babynews?refreshFeedsLoop=1</url>
+    	<description>refresh the feeds every 4 minutes</description>
+    	<schedule>every 2 minutes</schedule>
+ 	</cron> 
+ 	
+ 	<cron>
+    	<url>/babynews?make_sorted_lists=1</url>
+    	<description>sort the lists</description>
+    	<schedule>every 2 minutes</schedule>
+ 	</cron> 
+
+	<cron>
+  		<url>/babynews?updatedSpreadsheet=1</url>
+   		<schedule>every day 11:00</schedule>
+  		<description> </description>
+	</cron> 
+	
+</cronentries> 

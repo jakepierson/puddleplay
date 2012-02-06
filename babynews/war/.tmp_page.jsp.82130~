@@ -1,0 +1,63 @@
+<%@ page import="java.util.List"%>
+<%@ page import="com.jeffdouglas.entity.*"%>
+
+<%  
+	List<Account> accounts = (List<Account>)request.getAttribute("accounts");
+%>
+
+<html>
+<head>
+	<title>Telesales Demo (Google App Engine for Java)</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+</head>
+<body>
+	<span class="title">Welcome to the ACME Telesales Application (Java)</span>
+	<p/>
+	This application was built on Google App Engine for Java. The <a href="https://jeffdouglas-salesforce1.appspot.com/" target="_blank">first version was done in Python</a> and integrates with a Salesforce.com Developer org. This Java version
+	does not integrate with Salesforce.com (Google App Engine for Java does not currently support Web services) but uses BigTable as the datastore instead.
+	<p/>
+	<p>Before creating a new Opportunity, ensure that the Account does not already exist. You can also <a href="telesales?action=accountCreate"/>create a new account</a>.</p>
+	<p/>
+	<form method="post" action="telesales">
+		<input type="hidden" name="action" value="accountLookup"/>
+		<span class="heading">Search by Account Name:</span>
+		<p/>
+		<input type="text" name="accountName" value="<% if (request.getParameter("accountName") != null) { out.println(request.getParameter("accountName")); }  %>" style="width: 300px"/>
+		&nbsp
+		<input type="submit" value="Search"/>
+		&nbsp 
+	</form>
+	<p/>	
+	<% if (accounts.size() > 0) { %>
+		<span class="heading"><%= accounts.size() %> accounts matching your search criteria:</span>
+			
+		<p/>
+		<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" width="50%">
+		<tr bgcolor="#407BA8">
+			<td style="color: #ffffff; font-weight: bold;">Name</td>
+			<td style="color: #ffffff; font-weight: bold;">City</td>
+			<td style="color: #ffffff; font-weight: bold;">State</td>
+			<td style="color: #ffffff; font-weight: bold;">Phone</td>
+		</tr>
+		<% for (int i = 0;i<accounts.size();i++) { %>
+			<% Account a = (Account)accounts.get(i); %>
+			<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+				<td><a href="telesales?action=accountDisplay&accountId=<%= a.getId() %>"><%= a.getName() %></a></td>
+				<td><%= a.getCity() %></td>
+				<td><%= a.getState() %></td>
+				<td><%= a.getPhone() %></td>
+			</tr>
+		<% } %>
+		</table>
+	
+	<% } else { %>
+		<span class="heading">No matching accounts found.</span>
+	<% } %>
+	<p/>
+	
+	<p/><hr style="margin-top: 150px">
+	You can download the source code and files for this demo <a href="Telesales.zip">here</a>.<br>
+	For more information regarding this demo see: <a href="http://blog.jeffdouglas.com/2009/04/30/google-app-engine-for-java-demo-app/" target="_blank">http://blog.jeffdouglas.com/2009/04/30/google-app-engine-for-java-demo-app/</a>
+
+</body>
+</html>

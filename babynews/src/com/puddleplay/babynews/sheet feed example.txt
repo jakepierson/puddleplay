@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:gsx='http://schemas.google.com/spreadsheets/2006/extended'>
+<id>http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full</id>
+<updated>2009-11-30T09:00:04.839Z</updated>
+<category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#list'/>
+<title type='text'>Sheet1</title><link rel='alternate' type='text/html' href='http://spreadsheets.google.com/ccc?key=t0zz1h5xt7ziVsRxwP_pFZA'/>
+<link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full'/>
+<link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full'/>
+<link rel='self' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full'/>
+<author>
+	<name>jake.pierson</name>
+	<email>jake.pierson@gmail.com</email>
+</author>
+
+<openSearch:totalResults>1</openSearch:totalResults
+<openSearch:startIndex>1</openSearch:startIndex>
+
+<entry>
+	<id>http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full/cokwr</id>
+	<updated>2009-11-30T09:00:04.839Z</updated>
+	<category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#list'/>
+	<title type='text'>http://feeds.feedburner.com/CoolMomPicks</title>
+	<content type='text'>tags: Baby, Clothes, Girls, score: 1</content>
+	<link rel='self' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full/cokwr'/>
+	<link rel='edit' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/list/t0zz1h5xt7ziVsRxwP_pFZA/od6/private/full/cokwr/1669oelp10l'/>
+	
+	<gsx:url>http://feeds.feedburner.com/CoolMomPicks</gsx:url>
+	<gsx:tags>Baby, Clothes, Girls</gsx:tags>
+	<gsx:score>1</gsx:score>
+	
+</entry>
+
+</feed>
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:sites="http://schemas.google.com/sites/2008" xmlns:gs="http://schemas.google.com/spreadsheets/2006" xmlns:dc="http://purl.org/dc/terms" xmlns:batch="http://schemas.google.com/gdata/batch" xmlns:gd="http://schemas.google.com/g/2005" xmlns:thr="http://purl.org/syndication/thread/1.0">
+<id>http://sites.google.com/feeds/content/puddleplay.com/puddleplay</id>
+<updated>2009-12-01T18:00:01.363Z</updated>
+<title>Posts of blog</title>
+<link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay" />
+<link rel="http://schemas.google.com/g/2005#post" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay" />
+<link rel="http://schemas.google.com/g/2005#batch" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay/batch" />
+<link rel="self" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay?parent=3113193283687872916&amp;kind=announcement" />
+<generator version="1" uri="http://sites.google.com">Google Sites</generator>
+<openSearch:startIndex>1</openSearch:startIndex>
+
+<entry gd:etag="&quot;YD4peyI.&quot;">
+	<id>http://sites.google.com/feeds/content/puddleplay.com/puddleplay/5096592244335589813</id>
+	<published>2009-11-18T21:44:44.397Z</published>
+	<updated>2009-11-18T21:52:39.113Z</updated>
+	<app:edited xmlns:app="http://www.w3.org/2007/app">2009-11-18T21:52:39.112Z</app:edited>
+	<category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/sites/2008#announcement" label="announcement" />
+	<title>M-I-N-E - Personalized Presents!</title>
+	
+	<content type="xhtml">
+		<div xmlns="http://www.w3.org/1999/xhtml"><table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="color:rgb(128, 128, 128);font-family:lucida grande, tahoma, verdana, arial, sans-serif;font-size:11px"><h3 style="font-size:13px !important;color:rgb(51, 51, 51);margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-weight:normal;overflow-x:hidden;overflow-y:hidden"><a name="TOC-Holiday-gifts-with-a-little-more-le" /><a href="http://sites.google.com/a/puddleplay.com/puddleplay/personalized-gifts">Holiday gifts</a> with a little more lead time. They'll know it wasn't re-gifted :)<div style="display:block;text-align:left"><a href="http://sites.google.com/a/puddleplay.com/puddleplay/Blog/m-i-n-e-personalizedpresents/paperlili.jpg?attredirects=0" imageanchor="1"><img border="0" src="http://sites.google.com/a/puddleplay.com/puddleplay/_/rsrc/1258581137800/Blog/m-i-n-e-personalizedpresents/paperlili.jpg" /></a></div></h3></span></div></td></tr></tbody></table></div>
+	</content>
+		
+	<link rel="http://schemas.google.com/sites/2008#parent" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay/3113193283687872916" />
+	<link rel="alternate" type="text/html" href="http://sites.google.com/a/puddleplay.com/puddleplay/Blog/m-i-n-e-personalizedpresents" />
+	<link rel="http://schemas.google.com/sites/2008#revision" type="application/atom+xml" href="http://sites.google.com/feeds/revision/puddleplay.com/puddleplay/5096592244335589813" />
+	<link rel="self" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay/5096592244335589813" />
+	<link rel="edit" type="application/atom+xml" href="http://sites.google.com/feeds/content/puddleplay.com/puddleplay/5096592244335589813" />
+	
+	<author>
+		<name>Lena  </name>
+		<email>info@puddleplay.com</email>
+	</author>
+	
+	<sites:pageName>m-i-n-e-personalizedpresents</sites:pageName>
+	<sites:revision>2</sites:revision>
+	
+</entry>
+	
+	
+	
+	

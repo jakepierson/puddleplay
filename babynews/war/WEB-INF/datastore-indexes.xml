@@ -1,0 +1,45 @@
+<!-- Indices written at Thu, 8 Apr 2010 06:30:27 UTC -->
+
+<datastore-indexes autoGenerate="true">
+  
+<datastore-index kind="BabynewsPost" ancestor="false" source="auto">
+	<property name="post_score" direction="desc"/>
+	<property name="published_date" direction="desc"/>
+</datastore-index>
+
+<datastore-index kind="BabynewsPost" ancestor="false" source="manual">
+        <property name="published_date" direction="desc"/>
+        <property name="post_score" direction="desc"/>
+</datastore-index>
+
+<datastore-index kind="BabynewsPost" ancestor="false" source="manual">
+        <property name="blog_title" direction="asc"/>
+        <property name="post_score" direction="desc"/>
+        <property name="published_date" direction="desc"/>
+</datastore-index>
+	
+
+<datastore-index kind="BabynewsPost" ancestor="false" source="manual">
+        <property name="blog_title" direction="asc"/>
+        <property name="published_date" direction="desc"/>
+        <property name="post_score" direction="desc"/>
+</datastore-index>
+	
+
+<datastore-index kind="BabynewsPost" ancestor="false" source="auto">
+	<property name="Key" direction="desc"/>
+	<property name="UID" direction="desc"/>
+</datastore-index>
+
+<datastore-index kind="BabynewsList" ancestor="false" source="auto">
+	<property name="Key" direction="asc"/>
+	<property name="tag" direction="asc"/>
+</datastore-index>
+
+<datastore-index kind="BabynewsFeed" ancestor="false" source="auto">
+	<property name="Key" direction="asc"/>
+	<property name="feed_URL" direction="asc"/>
+</datastore-index>
+
+ 
+</datastore-indexes>

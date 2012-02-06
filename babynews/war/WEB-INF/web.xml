@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  
+  <!-- Servlets -->
+  
+    <servlet>
+        <servlet-name>babynews</servlet-name>
+        <servlet-class>com.puddleplay.babynews.BabynewsServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>babynews</servlet-name>
+        <url-pattern>/babynews</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>babynews</servlet-name>
+        <url-pattern>/favicon.ico</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>

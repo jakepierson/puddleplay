@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-appsforyourdomain-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-appsforyourdomain-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-base-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-codesearch-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-codesearch-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-contacts-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-docs-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-docs-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-maps-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-maps-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-projecthosting-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-projecthosting-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gdata-spreadsheet-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/google-collect-1.0-rc1.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/rome-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/twitter4j-core-2.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/PuddlePlay/BabyNews/babynews/war/WEB-INF/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/bcel-5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/boilerpipe-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/jtidy-r938.jar"/>
+	<classpathentry kind="lib" path="/Users/jacobpierson/Dropbox/projects/salon.com/Salon.com News Reader/war/WEB-INF/lib/nekohtml.jar"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine (3)"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

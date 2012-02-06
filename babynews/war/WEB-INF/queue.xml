@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<queue-entries>
+  <queue>
+    <name>default</name>
+    <rate>1/s</rate>
+    <bucket-size>1</bucket-size>
+  </queue>
+  <queue>
+    <name>feed-processing-queue</name>
+    <rate>5/s</rate>
+    <bucket-size>5</bucket-size>
+  </queue>
+  <queue>
+    <name>cache-processing-queue</name>
+    <rate>10/s</rate>
+  </queue>
+  <queue>
+    <name>datastore-cleanup-queue</name>
+    <rate>10/s</rate>
+    <bucket-size>10</bucket-size>
+  </queue> 
+  <queue>
+    <name>image-processing-queue</name>
+    <rate>10/s</rate>
+    <bucket-size>10</bucket-size>
+  </queue>
+</queue-entries>
