@@ -80,8 +80,8 @@ public class BabynewsServlet extends HttpServlet {
 	 * These are variables we can't set from the spreadsheet because we need them to get it
 	 */
 	//Parameters needed to get the spreadsheet data
-	public static final String username = "xxx";
-	public static final String password ="xxx";
+	public static final String username = "peterchane";
+	public static final String password = "rerqjzvmfaerklcd";
 	public static final String spreadsheet_URL = "http://spreadsheets.google.com/feeds/worksheets/0AqztVw6ec1OUdDB6ejFoNXh0N3ppVnNSeHdQX3BGWkE/private/full";
 	public static final String settings_worksheetname = "App Settings";
 	public static final String testing_spreadsheet_URL = "http://spreadsheets.google.com/feeds/worksheets/0AqztVw6ec1OUdGxMWHlrRGlWZ3ZOYVNQRmd5N2d5SVE/private/full";
@@ -1692,10 +1692,6 @@ public class BabynewsServlet extends HttpServlet {
 		//refresh the scores from the spreadsheet
 		BabynewsServlet.getScoring(true);
 		
-		// service to get spreadsheet data
-		SpreadsheetService service = this.getSpreadsheetService();
-		List<WorksheetEntry> worksheets = BabynewsServlet.getWorksheets( service );
-		
 		//get a pm for what we're about to do
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 
@@ -1703,6 +1699,11 @@ public class BabynewsServlet extends HttpServlet {
 		URL feedURL = null;
 
 		try {
+			
+			// service to get spreadsheet data
+			SpreadsheetService service = this.getSpreadsheetService();
+			List<WorksheetEntry> worksheets = BabynewsServlet.getWorksheets( service );
+			
 			//go through each of the worksheets
 			for (WorksheetEntry worksheet_entry : worksheets) {
 				String title = worksheet_entry.getTitle().getPlainText();
@@ -2162,6 +2163,18 @@ public class BabynewsServlet extends HttpServlet {
 			} catch (Exception e) {
 				log.warning( "There was an exception getting the Tags from the spreadsheet " + e.getMessage() + " because " + e.getCause() );
 				log.warning( BabynewsUtils.getStackTrace(e));
+				
+				
+				//try to get the tags from the datastore
+				List<BabynewsList> all_Lists = BabynewsUtils.getAllOf(BabynewsList.class);
+				List<String> all_tags = new ArrayList();
+				
+				for( BabynewsList list : all_Lists ) {
+					all_tags.add(list.getTag() );
+				}
+				
+				tags.put("Sections", all_tags);
+				
 			}
 	
 			// get a cache manager
